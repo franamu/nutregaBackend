@@ -177,11 +177,11 @@ class TablaProductos{
 
   			if($productos[$i]["tipo"] == "fisico"){
 
-  				$talla = json_encode($detalles["Talla"]);
-				$color = json_encode($detalles["Color"]);
+  			//$talla = json_encode($detalles["Talla"]);
+				//$color = json_encode($detalles["Color"]);
 				$marca = json_encode($detalles["Marca"]);
 
-				$vistaDetalles = "Talla: ".str_replace(array("[","]",'"'), "", $talla)." - Color: ".str_replace(array("[","]",'"'), "", $color)." - Marca: ".str_replace(array("[","]",'"'), "", $marca);
+				$vistaDetalles = "Marca: ".str_replace(array("[","]",'"'), "", $marca);
 
 
   			}else{
